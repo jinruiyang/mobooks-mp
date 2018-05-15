@@ -1,4 +1,6 @@
 // pages/main/main.js
+const app = getApp()
+
 Page({
 
   /**
@@ -8,11 +10,19 @@ Page({
   
   },
 
-  indexBooks: function () {
+  getUserInfo: function (e) {
+    console.log(e)
+    app.globalData.userInfo = e.detail.userInfo
+    this.setData({
+      userInfo: e.detail.userInfo
+    })
     wx.navigateTo({
-      url: '../index/index',
+      url: '../index/index'
     })
   },
+  
+
+  
   /**
    * 生命周期函数--监听页面加载
    */

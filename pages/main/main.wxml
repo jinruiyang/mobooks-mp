@@ -3,6 +3,6 @@
   <view class="banner-content">
     <view class="h1">MoBooks</view>
     <view class="tag">Share books Share life</view>
-    <button bindtap='indexBooks' class="btn btn-primary btn-lg">Start now</button>
+    <button class="btn btn-primary btn-lg" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Start now</button>
   </view>
 </view>
