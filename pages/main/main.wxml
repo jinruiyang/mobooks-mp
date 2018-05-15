@@ -1,2 +1,8 @@
 <!--pages/main/main.wxml-->
-<text>pages/main/main.wxml</text>
+<view class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.unsplash.com/photo-1485322551133-3a4c27a9d925?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4979d7b5808fb09333fcc3a50fb54b7f&auto=format&fit=crop&w=1350&q=80');">
+  <view class="banner-content">
+    <view class="h1">MoBooks</view>
+    <view class="tag">Share books Share life</view>
+    <button bindtap='indexBooks' class="btn btn-primary btn-lg">Start now</button>
+  </view>
+</view>
