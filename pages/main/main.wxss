@@ -2,12 +2,48 @@
 .banner {
   color: white;
   text-align: center;
-  height: 100vh;
+  height: 64vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.banner_logo {
+  width: 220px;
+  height:220px;
+  border-radius: 50%;
+  background-color: #FE5F55;
+  opacity: .9;
+}
+.banner_logo>.title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 5px;  
+  font-size: 34px;
+  margin-bottom: 7px;  
+}
+.banner_logo text {
+  font-family: 'open sans light';
+  font-size: 16px;
+  display: block; 
+  margin-bottom: 2px;
+}
+.banner input {
+  width:70%;
+  position:absolute;
+  bottom:-30rpx;
+  font-family:open sans light;
+  font-size:14px;
+  background-color:#37323E;
+  height:30px;
+  color:#ffffff;   
+}
+.banner_icon {
+  height: 120rpx;
+  width: 120rpx;
+  padding-top: 49rpx; 
 }
 .banner .h1 {
   font-size: 50px;
@@ -23,11 +59,13 @@
 }
 
 button {
-  width: 60%;
+  width: 45%;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border: 2px solid #0099cc;
-    color: #0099cc;
-  background: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background: #FFD275;
+  margin-top: 170rpx;
+  font-family: open sans light; 
 }
