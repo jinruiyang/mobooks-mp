@@ -1,4 +1,6 @@
 // pages/index/index.js
+const app = getApp()
+
 Page({
 
   /**
@@ -21,10 +23,15 @@ Page({
   onLoad: function (options) {
     // Save reference to page
     let page = this;
+    
+    if(app.globalData.newbook) {
+      this.setData({ book : app.globalData.newbook})
+    }
+    console.log(55555,this.data.book)
 
     // Get api data
     wx.request({
-      url: "https://evening-oasis-94741.herokuapp.com/api/v1/books",
+      url: "http://localhost:3000/api/v1/books",
       method: 'GET',
       success(res) {
         const books = res.data.books;
