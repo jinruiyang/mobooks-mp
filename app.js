@@ -1,7 +1,7 @@
 // //app.js
 App({
   onLaunch: function () {
-    const host = 'http://localhost:3000/' 
+    const host = 'https://evening-oasis-94741.herokuapp.com/api/v1/'
     console.log('processing to login') 
     wx.login({
       success: res => {
@@ -21,7 +21,20 @@ App({
       }
     })
   },
-  globalData: {}
+  globalData: {
+    getUserInfo: function (e) {
+      console.log(e)
+      app.globalData.userInfo = e.detail.userInfo
+      this.setData({
+        userInfo: e.detail.userInfo
+      })
+      wx.reLaunch({
+        url: '/pages/index/index'
+      })
+    },
+  
+  }
+})
   
 //   onLaunch: function () {
 //     // 展示本地存储能力
@@ -59,4 +72,3 @@ App({
   // globalData: {
 //     userInfo: null
 //   }
-})

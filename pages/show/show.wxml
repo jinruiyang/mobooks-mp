@@ -1,0 +1,10 @@
+<!--pages/show/show.wxml-->
+<view class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.3) 50%), url({{book.cover}});">
+  </view>
+  <view class='title'> {{book.title}}</view> 
+
+  <view style="height: 10px;"/>
+
+  <view class='teaser'> <view class="tag"> <text class="bold">Author</text> | {{book.author}}</view>  </view>
+  <view class='teaser'> <view class="tag"> <text class="bold">Description</text> | {{book.description}}</view>  </view>
+

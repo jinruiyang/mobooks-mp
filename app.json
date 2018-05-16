@@ -1,12 +1,40 @@
 {
   "pages":[
     "pages/main/main",
+    "pages/show/show",
+    "pages/add/add",
     "pages/index/index"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "MoBooks",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#FFD275",
+    "selectedColor": "black",
+    "borderStyle": "black",
+    "color": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/selected-random.png",
+        "selectedIconPath": "image/random.png",
+        "text": "Library"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "iconPath": "image/selected-add.png",
+        "selectedIconPath": "image/selected-add.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/selected-submit.png",
+        "selectedIconPath": "image/submit.png",
+        "text": "My Books"
+      }
+    ]
   }
 }
