@@ -21,7 +21,9 @@ App({
       }
     })
   },
-  globalData: {}
+  globalData: {
+  
+  }
 })
   
 //   onLaunch: function () {
