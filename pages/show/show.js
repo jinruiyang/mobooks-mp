@@ -1,5 +1,5 @@
 // pages/show/show.js
-const path = require('../../apiPaths.js')
+const path = require('../apiPaths.js')
 
 Page({
 

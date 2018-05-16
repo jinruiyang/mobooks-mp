@@ -49,6 +49,10 @@ Page({
       cover: this.data.imagePath[0]
     };
 
+    app.globalData.newbook = book
+    console.log(44444,app.globalData.newbook)
+    
+
     console.log(123, book);
 
     // Get api data
@@ -67,6 +71,10 @@ Page({
   },
 
   onLoad: function (options) {
+    console.log(888,app)
+    app.globalData.dog = "Hello World"
+    console.log(999,app)
+    console.log(777,app.globalData.dog)
   }
 })
 
