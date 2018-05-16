@@ -1,8 +1,8 @@
 {
   "pages":[
     "pages/main/main",
-    "pages/index/index",
     "pages/show/show",
+    "pages/index/index",
     "pages/add/add"
   ],
   "window":{
@@ -24,7 +24,7 @@
         "text": "Library"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/add/add",
         "iconPath": "image/selected-add.png",
         "selectedIconPath": "image/selected-add.png"
       },

@@ -16,8 +16,8 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo
     })
-    wx.navigateTo({
-      url: '../index/index'
+    wx.reLaunch({
+      url: '/pages/index/index'
     })
   },
   

@@ -1,5 +1,5 @@
 // pages/show/show.js
-const path = require('../../utils/apiPaths')
+const path = require('../../apiPaths.js')
 
 Page({
 
@@ -25,6 +25,6 @@ Page({
   },
 
   fetchLender: function (){
-    
+
   }
 })

@@ -27,7 +27,7 @@
       <textarea style="input-size" placeholder="Book Summary" class="input-height" name="description" maxlength="-1" />
      </view>
     </view>
-    <button class="btn btn-primary" bindgetuserinfo="uploadCoverImage">Upload Cover Image</button>
+    <button class="btn btn-primary" bindtap="uploadCoverImage">Upload Cover Image</button>
     <button class="submit-button" form-type="submit" >Submit</button>
 </form>
   

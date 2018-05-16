@@ -7,16 +7,20 @@ Page({
   data: {
 
   },
-  
+  test: function() {
+    console.log(234234242,"test")
+  },
+
   // Uploda Cover Image
-  uploadCoverImage: function(){
+  uploadCoverImage: function () {
+    console.log("test button")
     wx.chooseImage({
-      count: 1, // Default 9
-      sizeType: ['original', 'compressed'], // Can specify whether it is the original or compressed image, both have defaults
-      sourceType: ['album', 'camera'], // Can specify whether the source is an album or camera, both have defaults
+      count: 1,
+      sizeType: ['original'],
+      sourceType: ['album', 'camera'],
       success: function (res) {
-        // Returns the local file path list for the selected photo, tempFilePath can be used as the img tag's src attribute to display the image
         var tempFilePaths = res.tempFilePaths
+        console.log(tempFilePaths)
       }
     })
   },
@@ -54,8 +58,7 @@ Page({
 
   },
 
-
   onLoad: function (options) {
-
+    console.log("onLoad test")
   }
 })
