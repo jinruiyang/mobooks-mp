@@ -7,12 +7,11 @@ Page({
   data: {
 
   },
-  test: function() {
-    console.log(234234242,"test")
-  },
 
   // Uploda Cover Image
   uploadCoverImage: function () {
+    let that = this
+    
     console.log("test button")
     wx.chooseImage({
       count: 1,
@@ -21,12 +20,15 @@ Page({
       success: function (res) {
         var tempFilePaths = res.tempFilePaths
         console.log(tempFilePaths)
+        that.setData({ imagePath : tempFilePaths})
       }
     })
   },
 
   // Bind Submit
-  bindSubmit: function (e) {
+  bindSubmit: function(e) {
+    // console.log(3423423,this.data)
+    console.log(5545345,this)
 
     wx.showToast({
       title: 'Sending...',
@@ -36,29 +38,63 @@ Page({
     let title = e.detail.value.title;
     let author = e.detail.value.author;
     let description = e.detail.value.description;
+    // in the form, it's called image
+    let cover = e.detail.value.image;
+    let id = this.data.id;
 
-    let item = {
-      name: name,
+    let book = {
+      title: title,
       author: author,
-      description: description
-    }
+      description: description,
+      cover: this.data.imagePath[0]
+    };
+
+    console.log(123, book);
 
     // Get api data
     wx.request({
-      url: `http://localhost:3000/api/v1/items`,
+      url: `http://localhost:3000/api/v1/books`,
       method: 'POST',
-      data: item,
+      data: book,
       success() {
         // set data on index page and show
-        wx.reLaunch({
-          url: '/pages/index/index'
-        });
+       wx.reLaunch({
+         url: '/pages/index/index',
+       })
       }
     });
 
   },
 
   onLoad: function (options) {
-    console.log("onLoad test")
   }
 })
+
+// bindSubmit: function (e) {
+//   let name = e.detail.value.name;
+//   let image = e.detail.value.image;
+//   let description = e.detail.value.description;
+//   let address = e.detail.value.address;
+//   let id = this.data.id;
+
+
+//   let restaurant = {
+//     name: name,
+//     image: image,
+//     description: description,
+//     address: address
+//   }
+
+//   // Get api data
+//   wx.request({
+//     url: `http://localhost:3000/api/v1/restaurants`,
+//     method: 'POST',
+//     data: restaurant,
+//     success() {
+//       // set data on index page and show
+//       wx.redirectTo({
+//         url: '/pages/index/index'
+//       });
+//     }
+//   });
+// },

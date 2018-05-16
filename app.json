@@ -2,8 +2,9 @@
   "pages":[
     "pages/main/main",
     "pages/show/show",
-    "pages/index/index",
-    "pages/add/add"
+    "pages/add/add",
+    "pages/index/index"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
