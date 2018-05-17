@@ -22,21 +22,17 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "image/selected-random.png",
-        "selectedIconPath": "image/random.png",
-        "text": "Library"
+        "iconPath": "/image/group.png",
+        "selectedIconPath": "/image/group.png"
       },
       {
         "pagePath": "pages/add/add",
-        "iconPath": "image/post3.png",
-        "selectedIconPath": "image/post.png",
-        "text": "Add Books"
+        "iconPath": "image/post3.png"
       },
       {
         "pagePath": "pages/mybooks/mybooks",
         "iconPath": "image/selected-submit.png",
-        "selectedIconPath": "image/submit.png",
-        "text": "My Books"
+        "selectedIconPath": "image/submit.png"
       }
     ]
   }

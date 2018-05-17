@@ -1,5 +1,5 @@
 // pages/show/show.js
-const path = require('../apiPaths.js')
+const path = require('../../apiPaths.js')
 
 Page({
 
@@ -28,10 +28,6 @@ Page({
 
   },
   
-  onShow: function (){
-    wx.navigateBack()
-  },
-
   goHome: function (e) {
     wx.reLaunch({
       url: '/pages/index/index'
@@ -46,5 +42,12 @@ Page({
     wx.reLaunch({
       url: '/pages/mybooks/mybooks'
     })
+  },
+  onShow: function () {
+    var that = this
+    //如果 isBack 为 true，就返回上一页
+    if (that.data.isBack) {
+      wx.navigateBack()
+    }
   }
 })
