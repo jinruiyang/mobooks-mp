@@ -9,6 +9,22 @@ Page({
   data: {
   },
 
+  goHome: function (e) {
+    wx.reLaunch({
+      url: '/pages/index/index'
+    })
+  },
+  goAdd: function (e) {
+    wx.reLaunch({
+      url: '/pages/add/add'
+    })
+  },
+  goMybooks: function (e) {
+    wx.reLaunch({
+      url: '/pages/mybooks/mybooks'
+    })
+  },
+
   showBook: function (e) {
     const id = e.currentTarget.dataset.id
 
@@ -31,7 +47,7 @@ Page({
 
     // Get api data
     wx.request({
-      url: "https://evening-oasis-94741.herokuapp.com/api/v1/books",
+      url: "http://localhost:3000/api/v1/books",
       method: 'GET',
       success(res) {
         const books = res.data.books;
