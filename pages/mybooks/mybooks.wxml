@@ -1,0 +1,8 @@
+<!--pages/mybooks/mybooks.wxml-->
+<view><text>THE BOOKS I"M SHARING</text></view>
+<view><text>book title: </text></view>
+<view><text>THE BOOKS I"M BORROWING</text></view>
+<view><text>book list:</text></view>
+
+
+

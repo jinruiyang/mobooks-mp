@@ -3,7 +3,8 @@
     "pages/main/main",
     "pages/show/show",
     "pages/add/add",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/mybooks/mybooks"
     
   ],
   "window":{
@@ -30,7 +31,7 @@
         "selectedIconPath": "image/selected-add.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/mybooks/mybooks",
         "iconPath": "image/selected-submit.png",
         "selectedIconPath": "image/submit.png",
         "text": "My Books"
