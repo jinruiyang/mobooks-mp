@@ -28,8 +28,6 @@ Page({
   // Bind Submit
   bindSubmit: function(e) {
     // console.log(3423423,this.data)
-    console.log(5545345,this)
-
     wx.showToast({
       title: 'Sending...',
       icon: 'loading',
@@ -50,11 +48,7 @@ Page({
     };
 
     app.globalData.newbook = book
-    console.log(44444,app.globalData.newbook)
     
-
-    console.log(123, book);
-
     // Get api data
     wx.request({
       url: `http://localhost:3000/api/v1/books`,
@@ -63,18 +57,21 @@ Page({
       success() {
         // set data on index page and show
        wx.reLaunch({
-         url: '/pages/index/index',
+         url: '/pages/mybooks/mybooks',
        })
       }
     });
 
   },
 
+  goMybooks: function (e) {
+    wx.reLaunch({
+      url: '/pages/mybooks/mybooks'
+    })
+  },
+
   onLoad: function (options) {
-    console.log(888,app)
-    app.globalData.dog = "Hello World"
-    console.log(999,app)
-    console.log(777,app.globalData.dog)
+    
   }
 })
 
