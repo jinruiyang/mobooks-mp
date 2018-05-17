@@ -24,7 +24,27 @@ Page({
     })
   },
 
-  fetchLender: function (){
+  fetchOwner: function (){
 
+  },
+  
+  onShow: function (){
+    wx.navigateBack()
+  },
+
+  goHome: function (e) {
+    wx.reLaunch({
+      url: '/pages/index/index'
+    })
+  },
+  goContact: function (e) {
+    wx.reLaunch({
+      url: '/pages/contact/contact'
+    })
+  },
+  goMybooks: function (e) {
+    wx.reLaunch({
+      url: '/pages/mybooks/mybooks'
+    })
   }
 })

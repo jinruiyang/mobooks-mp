@@ -28,8 +28,9 @@
       },
       {
         "pagePath": "pages/add/add",
-        "iconPath": "image/selected-add.png",
-        "selectedIconPath": "image/selected-add.png"
+        "iconPath": "image/post3.png",
+        "selectedIconPath": "image/post.png",
+        "text": "Add Books"
       },
       {
         "pagePath": "pages/mybooks/mybooks",

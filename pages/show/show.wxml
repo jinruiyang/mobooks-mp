@@ -8,3 +8,20 @@
   <view class='teaser'> <view class="tag"> <text class="bold">Author</text> | {{book.author}}</view>  </view>
   <view class='teaser'> <view class="tag"> <text class="bold">Description</text> | {{book.description}}</view>  </view>
 
+<!--blank item for padding item from bottom  -->
+<view class='blank-item'></view>
+
+<view class='nav'>
+  <view class='salmon-container'>
+      <view class='extend-padding' bindtap="goHome">
+      <image class="avatar-tab"   src="/image/group.png" ></image> 
+      </view>
+      <view class='extend-padding' bindtap="goContact">
+      <image class="avatar-tab"   src="/image/heart.png" ></image> 
+      </view> 
+      <view class='extend-padding' bindtap="goMybooks">
+      <image class="avatar-tab"   src="/images/open-book.svg" ></image> 
+      </view>
+  </view>
+</view>
+

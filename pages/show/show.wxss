@@ -44,3 +44,26 @@
       font-weight: 700;
   }
 
+  .nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #FFD275;
+  overflow: hidden;
+  height: 45px;
+  border-top: 0.5px solid #dddddd;
+}
+
+.nav-back {
+  position: fixed;
+  bottom: 0px;
+  left: -10px;
+  width: 40px;
+  /* background-color: #999999; */
+  overflow: hidden;
+  height: 45px;
+  /* border: 0.5px solid #dddddd; */
+  color: white;
+  opacity: 0.7;
+  z-index: 99;
+}

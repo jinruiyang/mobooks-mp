@@ -31,7 +31,7 @@ Page({
 
     // Get api data
     wx.request({
-      url: "http://localhost:3000/api/v1/books",
+      url: "https://evening-oasis-94741.herokuapp.com/api/v1/books",
       method: 'GET',
       success(res) {
         const books = res.data.books;
