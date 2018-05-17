@@ -23,11 +23,11 @@ Page({
   onLoad: function (options) {
     // Save reference to page
     let page = this;
-    
-    if(app.globalData.newbook) {
-      this.setData({ book : app.globalData.newbook})
+
+    if (app.globalData.newbook) {
+      this.setData({ book: app.globalData.newbook })
     }
-    console.log(55555,this.data.book)
+    console.log(55555, this.data.book)
 
     // Get api data
     wx.request({
