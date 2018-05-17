@@ -1,9 +1,10 @@
 {
   "pages":[
     "pages/main/main",
-    "pages/show/show",
-    "pages/add/add",
     "pages/index/index",
+    "pages/show/show",
+    "pages/contact/contact",
+    "pages/add/add",
     "pages/mybooks/mybooks"
     
   ],

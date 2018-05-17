@@ -1,0 +1,6 @@
+<!--pages/contact/contact.wxml-->
+<view><text>contact page</text></view>
+<view><text>banner</text></view>
+<view><text>introduction</text></view>
+<view><text>avater</text></view>
+<view><text>contact infos</text></view>
