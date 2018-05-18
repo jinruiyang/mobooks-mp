@@ -51,14 +51,14 @@ Page({
     // Save reference to page
     let page = this;
 
-    if (app.globalData.newbook) {
-      this.setData({ book: app.globalData.newbook })
-    }
-    console.log(55555, this.data.book)
+    // if (app.globalData.newbook) {
+    //   this.setData({ book: app.globalData.newbook })
+    // }
+    // console.log(55555, this.data.book)
 
     // Get api data
     wx.request({
-      url: "http://localhost:3000/api/v1/books",
+      url: app.globalData.host + `${app.globalData.userId}/books`,
       method: 'GET',
       success(res) {
         const books = res.data.books;
