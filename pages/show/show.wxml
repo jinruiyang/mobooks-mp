@@ -6,7 +6,7 @@
   <view style="height: 10px;"/>
 
   <view class='teaser'> <view class="tag"> <text class="bold">Author</text> | {{book.author}}</view>  </view>
-  <view class='teaser'> <view class="tag"> <text class="bold">Description</text> | {{book.description}}</view>  </view>
+  <view class='teaser'> <view class="tag"> <text class="bold">Description</text> | {{book.summary}}</view>  </view>
 
 <!--blank item for padding item from bottom  -->
 <view class='blank-item'></view>
