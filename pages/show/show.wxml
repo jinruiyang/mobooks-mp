@@ -14,9 +14,15 @@
   </view>
   <view class="book-summary-info">
     <text class="bold">Book Summary</text>
-    <text>lots of random text here so it can be a boooooooookkkkkkk descriotion that just keeps going and going and going{{book.description}}</text>
+    <text>lots of random text here so it can be a boooooooookkkkkkk descriotion that just keeps going and going and going{{book.summary}}</text>
   </view>
 </view>
+
+
+    <image src="{{book.cover}}" class="user-avatar flex-item"></image>  
+  </view>
+  <view class="user-nickname">{{book.owner.username}}</view>
+  <view class="user-location">{{book.owner.address}}</view>
 
 
 <!--blank item for padding item from bottom  -->

@@ -1,5 +1,5 @@
 // pages/show/show.js
-const path = require('../../apiPaths.js')
+const app = getApp()
 
 Page({
 
@@ -8,20 +8,33 @@ Page({
   },
 
   onLoad: function (options) {
-    this.setData({ bookId: options.id })
-    this.fetchBook(path.getBook, this.data.bookId)
-  },
+    // //find the restaurant id you want to load
+    // const id = options.id
 
-  fetchBook: function (url, id) {
-    let that = this
+    // //get that restaurant with the id from globaldata
+    // const data = getApp().globalData.restaurants
+    // const restaurant = data.find(r => r.id == id)
+    // //set this pages's data to that restaurant
+    // this.setData(restaurant)
 
+    let that = this;
+
+    // Get api data
     wx.request({
-      url: url + id,
-      success: function (res) {
-        that.setData({ book: res.data })
-        console.log(8888, res.data)
+      url: `https://evening-oasis-94741.herokuapp.com/api/v1/books/331`,
+      method: 'GET',
+      success(res) {
+        const book = res.data;
+
+        // Update local data
+        that.setData(
+          book
+        );
+
+        wx.hideToast();
       }
-    })
+    });
+
   },
 
   fetchOwner: function (){
