@@ -21,7 +21,7 @@ Page({
 
     // Get api data
     wx.request({
-      url: `https://evening-oasis-94741.herokuapp.com/api/v1/books/331`,
+      url: app.globalData.host + `books/${options.id}`,
       method: 'GET',
       success(res) {
         const book = res.data;
