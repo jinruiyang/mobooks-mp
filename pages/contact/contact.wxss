@@ -1,9 +1,9 @@
 /* pages/contact/contact.wxss */
 /*FOR BANNER  */
-.banner {
+.borrow-banner {
   color: white;
   text-align: center;
-  height: 80vh;
+  height: 68vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
@@ -11,6 +11,28 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
+}
+.book-show-info {
+  display:flex;
+  width:280px;
+  height:90px;
+  color: black;
+  background-color:#F3F1F1;
+  margin:0 auto;
+  margin-top:7px;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow:2px 2.5px #E0E0E0;
+  opacity: .9;
+}
+.book-title-borrowing{
+  font-size: 14px;
+  font-family: open sans light;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
+
 }
 .banner_logo {
   width: 220px;
@@ -27,7 +49,7 @@
 }
 .banner_logo text {
   font-family: 'open sans light';
-  font-size: 16px;
+  font-size: 24px;
   display: block; 
   margin-bottom: 2px;
 }
@@ -70,6 +92,18 @@ button {
   margin-top: 20rpx;
   font-family: open sans light; 
 }
+.user-contact-info-borrow {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding-top: 10px;
+}
+.user-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 0 300rpx 100rpx rgba(255, 255, 255, .2), 0 1px 0 rgba(255, 255, 255, 0.4);
+} 
 
 /*FOR BANNER  */
 
@@ -158,12 +192,7 @@ button {
 }
 
 
- .user-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    box-shadow: 0 0 300rpx 100rpx rgba(255, 255, 255, .2), 0 1px 0 rgba(255, 255, 255, 0.4);
-} 
+ 
 
 .user-item {
   flex: 0 0 50px;

@@ -1,14 +1,29 @@
 <!--pages/contact/contact.wxml-->
 <!--banner -->
- <view class="slogan"><text>just text</text>{{book.owner.username}}<text>to borrow</text>{{book.title}}</view>
- 
+<view class="borrow-banner" style="background-image: url('https://images.unsplash.com/photo-1514894780887-121968d00567?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=324ef1b343dd3d2a806562faf91d71fa&auto=format&fit=crop&w=1352&q=80');">
+  <view class="banner_logo">
+    <image class="banner_icon"  src='../../images/open-book.svg'></image>
+    <text> CONGRATS ON BORROWING A MOBOOK!</text>
+  </view>
+  <view>
+    <view class="book-show-info">
+    <view class="title-author-text">
+    <view class="slogan"><text>Just reach out to </text>{{book.owner.username}}<text> to receive </text>{{book.title}}!</view>
+    </view>
+  </view>
+  </view>
+</view>
+<view class="user-contact-info-borrow">
+  <image src="{{book.cover}}" class="user-avatar"></image>  
+  <view class="user-nickname">{{book.owner.username}}</view>
+  <view class="user-location">{{book.owner.contact}}</view>
+</view>
+
  
   <!--banner -->
 
   <!--oewner infos -->
-   <image src="{{book.cover}}" class="user-avatar flex-item"></image>  
-  <view class="user-nickname">{{book.owner.username}}</view>
-  <view class="user-location">{{book.owner.contact}}</view>
+
   <!--oewner infos -->
 
 <!--blank item for padding item from bottom  -->
