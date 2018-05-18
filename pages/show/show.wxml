@@ -1,12 +1,23 @@
 <!--pages/show/show.wxml-->
 <view class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.3) 50%), url({{book.cover}});">
+</view>
+<view class="bottom-half">
+  <view class="book-show-info">
+    <view class="title-author-text">
+      <text class="book-title">Title here{{book.title}}           </text>
+      <text class="author">Author here{{book.author}}             </text>  
+    </view>
+    <view class="lender-info">
+      <image class="lender-avatar"></image>
+      <text>From NAME'S library</text>
+    </view>
   </view>
-  <view class='title'> {{book.title}}</view> 
+  <view class="book-summary-info">
+    <text class="bold">Book Summary</text>
+    <text>lots of random text here so it can be a boooooooookkkkkkk descriotion that just keeps going and going and going{{book.description}}</text>
+  </view>
+</view>
 
-  <view style="height: 10px;"/>
-
-  <view class='teaser'> <view class="tag"> <text class="bold">Author</text> | {{book.author}}</view>  </view>
-  <view class='teaser'> <view class="tag"> <text class="bold">Description</text> | {{book.description}}</view>  </view>
 
 <!--blank item for padding item from bottom  -->
 <view class='blank-item'></view>

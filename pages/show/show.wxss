@@ -1,8 +1,47 @@
+/*my additions  */
+.bottom-half {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+}
+.book-show-info {
+  display:flex;
+  justify-content:center;
+  align-content:space-around;
+  width:360px;
+  height:90px;
+  background-color:#F3F1F1;
+  margin:0 auto;
+  margin-top:7px;
+} 
+.title-author-text {
+  margin-left: 50px;
+}
+.book-title {
+  font-size: 14px;
+  font-style: bold;
+}
+.author {
+  font-style: 12px;
+}
+
+
+/*
+
+lender-info
+lender-avatar
+book-summary-info
+.bold */
+
+
+
+
 /* pages/show/show.wxss */
 .banner {
     color: white;
     text-align: center;
-    height: 50vh;
+    height: 60vh;
     /* if you have a 70px navbar => height: calc(100vh - 70px); */
     background-size: cover !important;
     display: flex;
