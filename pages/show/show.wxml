@@ -20,7 +20,6 @@
 
 
     <image src="{{book.cover}}" class="user-avatar flex-item"></image>  
-  </view>
   <view class="user-nickname">{{book.owner.username}}</view>
   <view class="user-location">{{book.owner.address}}</view>
 
