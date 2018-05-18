@@ -1,4 +1,194 @@
 /* pages/contact/contact.wxss */
+/*FOR BANNER  */
+.banner {
+  color: white;
+  text-align: center;
+  height: 80vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.banner_logo {
+  width: 220px;
+  height:220px;
+  border-radius: 50%;
+  background-color: #FE5F55;
+  opacity: .9;
+}
+.banner_logo>.title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 5px;  
+  font-size: 34px;
+  margin-bottom: 7px;  
+}
+.banner_logo text {
+  font-family: 'open sans light';
+  font-size: 16px;
+  display: block; 
+  margin-bottom: 2px;
+}
+.banner input {
+  width:70%;
+  position:absolute;
+  bottom:-30rpx;
+  font-family:open sans light;
+  font-size:14px;
+  background-color:#37323E;
+  height:30px;
+  color:#ffffff;   
+}
+.banner_icon {
+  height: 120rpx;
+  width: 120rpx;
+  padding-top: 49rpx; 
+}
+.banner .h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.banner .tag {
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  margin-bottom: 30px;
+}
+
+button {
+  width: 45%;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background: #FFD275;
+  margin-top: 20rpx;
+  font-family: open sans light; 
+}
+
+/*FOR BANNER  */
+
+/*FOR owner componet  */
+  .camera-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.extend-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.stat-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.profile-padding {
+  padding-top: 20px;
+}
+
+
+.flex-item {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.icon-back {
+  width: 74px;
+  height: 30px;
+  opacity: 0.5;
+}
+
+.detail-font-head {
+  padding-top: 5px;
+  font-size: 13px;
+}
+
+.name-font-head-comment {
+  color: #999999;
+  font-size: 10px;
+}
+
+.flex-item-name {
+  padding-top: 10px;
+}
+
+.detail-font-head {
+  padding-top: 5px;
+  font-size: 13px;
+}
+
+.row-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction:row;
+   text-align: center; 
+  /* border-bottom: 0.2px solid #dddddd; */
+}
+
+.col-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction:column;
+   text-align: center; 
+  /* border-bottom: 0.2px solid #dddddd; */
+}
+
+
+.upload-bg{
+  
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  font-size: 30rpx;
+}
+
+
+ .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 300rpx 100rpx rgba(255, 255, 255, .2), 0 1px 0 rgba(255, 255, 255, 0.4);
+} 
+
+.user-item {
+  flex: 0 0 50px;
+  /* padding-top: 10px;
+  padding-left: 5px; */
+
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+
+.pull-down-center {
+  text-align: center;
+}
+
+.pull-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+ /*FOR owner componet  */
+
 /*FOR BOTTOM TAB  */
 
 .blank-item {

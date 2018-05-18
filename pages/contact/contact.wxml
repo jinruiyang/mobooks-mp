@@ -1,9 +1,16 @@
 <!--pages/contact/contact.wxml-->
-<view><text>contact page</text></view>
-<view><text>banner</text></view>
-<view><text>introduction</text></view>
-<view><text>avater</text></view>
-<view><text>contact infos</text></view>
+<!--banner -->
+ <view class="slogan"><text>just text</text>{{book.owner.username}}<text>to borrow</text>{{book.title}}</view>
+ 
+ 
+  <!--banner -->
+
+  <!--oewner infos -->
+   <image src="{{book.cover}}" class="user-avatar flex-item"></image>  
+  <view class="user-nickname">{{book.owner.username}}</view>
+  <view class="user-location">{{book.owner.contact}}</view>
+  <!--oewner infos -->
+
 <!--blank item for padding item from bottom  -->
 <view class='blank-item'></view>
 

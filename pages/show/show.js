@@ -37,9 +37,6 @@ Page({
 
   },
 
-  fetchOwner: function (){
-
-  },
   
   goHome: function (e) {
     wx.reLaunch({

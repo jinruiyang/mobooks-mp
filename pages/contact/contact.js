@@ -1,11 +1,41 @@
 // pages/contact/contact.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    book: {}
+  },
+
+  onLoad: function (options) {
+    // //find the restaurant id you want to load
+    // const id = options.id
+
+    // //get that restaurant with the id from globaldata
+    // const data = getApp().globalData.restaurants
+    // const restaurant = data.find(r => r.id == id)
+    // //set this pages's data to that restaurant
+    // this.setData(restaurant)
+
+    let that = this;
+
+    // Get api data
+    wx.request({
+      url: `https://evening-oasis-94741.herokuapp.com/api/v1/books/331`,
+      method: 'GET',
+      success(res) {
+        const book = res.data;
+
+        // Update local data
+        that.setData(
+          book
+        );
+      console.log(331,book)
+        wx.hideToast();
+      }
+    });
   },
 
   goHome: function (e) {
@@ -29,61 +59,5 @@ Page({
     if (that.data.isBack) {
       wx.navigateBack()
     }
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
   }
 })
