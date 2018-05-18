@@ -38,6 +38,8 @@
   height: 220px;
   background-color: #F3F1F1;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .book-image {
   width: 130px;
@@ -47,15 +49,25 @@
   display: flex;
   justify-content: center;
   align-items: center;  
+  background-position: center;
+  background-size: fit;
 }
-.card-category {
+ .card-category {
   font-size: 12px;
   text-align: left;
   margin-left: 20px;
   margin-right: 20px;
   line-height: 40%;
   color: #333744;
-}
+} 
+ .title-card-category {
+  /* position: absolute; */
+  margin-top: 2px;
+  margin-left: 18px;
+  font-size: 12px;
+  font-family: open sans light;
+  max-width: 130px;
+} 
 
 /* .card {
   height: 175px;
@@ -87,13 +99,7 @@
   width: 40px;
   border-radius: 50%;
 }
-.card-category {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 15px;
-  text-transform: uppercase;
-}
+
 
  /*FOR BOTTOM TAB  */
 
