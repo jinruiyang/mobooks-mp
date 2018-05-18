@@ -6,7 +6,18 @@
   <view style="height: 10px;"/>
 
   <view class='teaser'> <view class="tag"> <text class="bold">Author</text> | {{book.author}}</view>  </view>
-  <view class='teaser'> <view class="tag"> <text class="bold">Description</text> | {{book.summary}}</view>  </view>
+  <view class='teaser'> <view class="tag"> <text class="bold">Book Summary</text> | {{book.summary}}</view>  </view>
+  
+  <!-- Owner component  -->
+<view class='col-container'>
+
+  <view class='flex-item profile-padding'>
+    <image src="{{book.cover}}" class="user-avatar flex-item"></image>  
+  </view>
+  <view class="user-nickname">{{book.owner.username}}</view>
+  <view class="user-location">{{book.owner.address}}</view>
+</view>
+<!--Owner component  -->
 
 <!--blank item for padding item from bottom  -->
 <view class='blank-item'></view>
