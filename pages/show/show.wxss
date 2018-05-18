@@ -7,8 +7,6 @@
 }
 .book-show-info {
   display:flex;
-  justify-content:center;
-  align-content:space-around;
   width:360px;
   height:90px;
   background-color:#F3F1F1;
@@ -16,29 +14,77 @@
   margin-top:7px;
 } 
 .title-author-text {
-  margin-left: 50px;
+  min-width:70%;
+  position: relative;
 }
 .book-title {
-  font-size: 14px;
-  font-style: bold;
+  font-size: 16px;
+  font-weight:bold;
+  font-family:open sans light;
+  position: absolute;
+  margin-top: 24px;
+  margin-left: 5px;
 }
 .author {
-  font-style: 12px;
+  font-size:14px;
+  display:block;
+  font-family:open sans light;
+  margin-top:46px;
+  position:absolute;
+  margin-left:5px;
+}
+.book-summary-info {
+  display: flex;
+  width: 360px;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 5px;
+  border:1px solid #F3F1F1;  
+}
+.book-summary-heading{
+  font-size: 16px;
+  font-weight:bold;
+  font-family:open sans light;
+  margin-left: 5px;
+  margin-top: 7px;
+}
+.book-summary-details{
+  font-size:14px;
+  display:block;
+  font-family:open sans light;
+  margin-left: 5px;
+  margin-bottom: 7px;
 }
 
-
-/*
-
-lender-info
-lender-avatar
-book-summary-info
-.bold */
-
-
+.owner-info {
+  display:flex;
+  align-items:center;
+  align-items:center;
+  margin:0 auto;
+}
+.user-nickname {
+  font-size:14px;
+  font-family:open sans light;
+  margin-top: 2px;
+}
+.owner-summary-info {
+  display: flex;
+  width: 360px;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 5px;
+  border:1px solid #F3F1F1;  
+}
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 300rpx 100rpx rgba(255, 255, 255, .2), 0 1px 0 rgba(255, 255, 255, 0.4);
+} 
 
 
 /* pages/show/show.wxss */
-.banner {
+.cover-banner {
     color: white;
     text-align: center;
     height: 60vh;
@@ -47,6 +93,8 @@ book-summary-info
     display: flex;
     align-items: center;
     justify-content: center;
+    width:100vw;
+
   }
 
   .title {
@@ -168,12 +216,7 @@ book-summary-info
 }
 
 
- .user-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    box-shadow: 0 0 300rpx 100rpx rgba(255, 255, 255, .2), 0 1px 0 rgba(255, 255, 255, 0.4);
-} 
+ 
 
 .user-item {
   flex: 0 0 50px;
