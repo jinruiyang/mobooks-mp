@@ -31,9 +31,12 @@
 
 <view class='nav'>
   <view class='salmon-container'>
+    <view class="navbar home">
       <view class='extend-padding' bindtap="goHome">
       <image class="avatar-tab"   src="/image/group.png" ></image> 
       </view>
+    </view>
+      
       <view class='extend-padding' bindtap="goContact">
       <image class="avatar-tab"   src="/image/selected-submit.png" ></image> 
       </view> 
