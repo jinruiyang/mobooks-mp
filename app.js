@@ -1,12 +1,11 @@
 // //app.js
 App({
   onLaunch: function () {
-    // const host = 'https://evening-oasis-94741.herokuapp.com/api/v1/'
     const host = 'http://localhost:3000/api/v1/'
-    console.log('processing to login')
+    console.log('processing to login') 
     wx.login({
       success: res => {
-        console.log(444444,res)
+        console.log(res)
 
         wx.request({
           url: host + 'login', 
@@ -23,7 +22,6 @@ App({
     })
   },
   globalData: {
-    
 
   
   }

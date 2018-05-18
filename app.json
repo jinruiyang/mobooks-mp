@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/main/main",
     "pages/index/index",
+    "pages/main/main",
     "pages/show/show",
     "pages/contact/contact",
     "pages/add/add",
@@ -10,31 +10,9 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#FFD275",
     "navigationBarTitleText": "MoBooks",
-    "navigationBarTextStyle":"black"
-  },
-  "tabBar": {
-    "backgroundColor": "#FFD275",
-    "selectedColor": "black",
-    "borderStyle": "black",
-    "color": "white",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "iconPath": "/image/group.png",
-        "selectedIconPath": "/image/group.png"
-      },
-      {
-        "pagePath": "pages/add/add",
-        "iconPath": "image/post3.png",
-        "selectedIconPath": "/image/post.png"
-      },
-      {
-        "pagePath": "pages/mybooks/mybooks",
-        "iconPath": "image/selected-submit.png",
-        "selectedIconPath": "image/submit.png"
-      }
-    ]
+    "navigationBarTextStyle":"white"
   }
+  
 }

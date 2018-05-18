@@ -8,6 +8,22 @@ Page({
   
   },
 
+  goHome: function (e) {
+    wx.reLaunch({
+      url: '/pages/index/index'
+    })
+  },
+  goAdd: function (e) {
+    wx.reLaunch({
+      url: '/pages/add/add'
+    })
+  },
+  goMybooks: function (e) {
+    wx.reLaunch({
+      url: '/pages/mybooks/mybooks'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

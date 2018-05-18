@@ -1,4 +1,4 @@
-const url = 'https://evening-oasis-94741.herokuapp.com/api/v1/'
+const url = 'http://localhost:3000/api/v1/'
 
 module.exports = {
   getAllBooks: url + "books",

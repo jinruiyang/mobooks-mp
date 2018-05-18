@@ -13,6 +13,24 @@
     <text class="card-category">{{ book.title }}</text>
   </view>
 </view>
+
+<!--blank item for padding item from bottom  -->
+<view class='blank-item'></view>
+
+<view class='nav'>
+  <view class='salmon-container'>
+      <view class='extend-padding' bindtap="goHome">
+      <image class="avatar-tab"   src="/image/group.png" ></image> 
+      </view>
+      <view class='extend-padding' bindtap="getUserInfo">
+      <image class="avatar-tab"   src="/image/post3.png" ></image> 
+      </view> 
+      <view class='extend-padding' bindtap="goMybooks">
+      <image class="avatar-tab"   src="/images/open-book.svg" ></image> 
+      </view>
+  </view>
+</view>
+
 <!-- 
 <view class="book_library">
   <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{book.cover}}');"
