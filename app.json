@@ -10,9 +10,9 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#FFD275",
     "navigationBarTitleText": "MoBooks",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
   }
   
 }
