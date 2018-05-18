@@ -1,12 +1,5 @@
 <!--index.wxml-->
-<form bindsubmit="search">
-    <view class="user-input">
-     <view class="text-area-wrap">
-      <textarea placeholder="Search books by title or author" value="{{userInfo.nickName}}" name="name" auto-height />
-     </view>
-    </view>
-</form>
-<button bindtap='searchBook' class="btn btn-primary btn-lg">Search Now</button>
+<text>This is the book you looking for:</text>
 <view class="book_library">
   <view class="grey-card"wx:for="{{books}}" wx:for-item="book" wx:key="book.id" bindtap='showBook' data-id="{{book.id}}">
     <view class="book-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{book.cover}}');">
@@ -39,4 +32,5 @@
     <view class="card-category">{{ book.title }}        </view>
   </view>
 </view>  -->
+
 
