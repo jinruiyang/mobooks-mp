@@ -5,7 +5,8 @@
     "pages/show/show",
     "pages/contact/contact",
     "pages/add/add",
-    "pages/mybooks/mybooks"
+    "pages/mybooks/mybooks",
+    "pages/search/search"
     
   ],
   "window":{
